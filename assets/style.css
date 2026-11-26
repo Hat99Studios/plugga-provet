@@ -31,6 +31,7 @@ p { margin: 0 0 16px; }
 .lead { max-width: 52ch; color: var(--muted); font-size: 1.12rem; margin-top: 18px; }
 .card { background: linear-gradient(145deg, #202025, var(--surface)); border: 1px solid #45454e; border-radius: var(--radius); padding: 25px; box-shadow: 0 10px 26px rgb(0 0 0 / 14%); }
 .app-card h3 a { text-decoration: none; }
+.app-card + .app-card { margin-top: 20px; }
 .support { margin-top: 28px; }
 .support h2, .card h2 { margin-top: 0; }
 .quiet, .updated { color: var(--muted); font-size: 0.92rem; margin-top: 36px; }
