@@ -1,0 +1,77 @@
+:root {
+  --bg: #200f17;
+  --surface: #361a25;
+  --text: #faf1e1;
+  --muted: #d1baaf;
+  --accent: #c5a06d;
+  --line: #66404a;
+}
+
+html,
+body {
+  background: var(--bg);
+}
+
+a {
+  color: #edaea1;
+}
+
+a:hover {
+  color: var(--text);
+}
+
+a:focus-visible {
+  outline-color: #edaea1;
+}
+
+.site-header {
+  background: #321923;
+  border-bottom: 0;
+}
+
+.site-header::after {
+  content: "";
+  display: block;
+  height: 18px;
+  background-image:
+    linear-gradient(to right, #f9f0e0 0 50%, #c2696e 50% 100%),
+    linear-gradient(to right, #c2696e 0 50%, #9c2933 50% 100%);
+  background-position: 0 0, 0 9px;
+  background-repeat: repeat-x;
+  background-size: 36px 9px;
+}
+
+.brand a,
+h1,
+h2,
+h3 {
+  color: var(--text);
+}
+
+nav,
+.lead,
+.quiet,
+.updated,
+footer {
+  color: var(--muted);
+}
+
+.eyebrow,
+.store-placeholder {
+  color: var(--accent);
+}
+
+.card {
+  background: linear-gradient(145deg, #42212d, var(--surface));
+  border-color: #8f4357;
+  box-shadow: 0 12px 30px rgb(10 3 7 / 28%);
+}
+
+footer {
+  border-top-color: var(--line);
+}
+
+.skip-link {
+  background: #8f4357;
+  color: var(--text);
+}
